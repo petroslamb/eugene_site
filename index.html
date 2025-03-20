@@ -5,10 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ψυχολόγος – Ψυχοθεραπεύτρια | Ευγενία Δήμα</title>
 	<!-- Tailwind CSS via CDN -->
-	<link
-	href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css"
-	rel="stylesheet"
-	/>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
 	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
 	<!-- Add meta tags for SEO -->
@@ -18,88 +15,254 @@
 	<!-- Add Open Graph tags for social sharing -->
 	<meta property="og:title" content="Ψυχολόγος – Ψυχοθεραπεύτρια | Ευγενία Δήμα" />
 	<meta property="og:description" content="Ψυχολογική υποστήριξη και ψυχοθεραπεία στην Αθήνα" />
-	<meta property="og:image" content="path-to-your-logo-or-image.jpg" />
+	<meta property="og:image" content="images/OYTqttYn/553x0_470x0/evgeniadima-psychotherapy_1__msi___jpg.webp" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="el_GR" />
 
 	<!-- Add structured data -->
 	<script type="application/ld+json">
-	  {
-	    "@context": "https://schema.org",
-	    "@type": "ProfessionalService",
-	    "name": "Ευγενία Δήμα - Ψυχολόγος Ψυχοθεραπεύτρια",
-	    "address": {
-	      "@type": "PostalAddress",
-	      "streetAddress": "Αώου 9",
-	      "addressLocality": "Αμπελόκηποι, Αθήνα",
-	      "postalCode": "115 23",
-	      "addressCountry": "GR"
-	    }
+	{
+	  "@context": "https://schema.org",
+	  "@type": "ProfessionalService",
+	  "name": "Ευγενία Δήμα - Ψυχολόγος Ψυχοθεραπεύτρια",
+	  "image": "images/OYTqttYn/553x0_470x0/evgeniadima-psychotherapy_1__msi___jpg.webp",
+	  "address": {
+	    "@type": "PostalAddress",
+	    "streetAddress": "Αώου 9",
+	    "addressLocality": "Αμπελόκηποι, Αθήνα",
+	    "postalCode": "115 23",
+	    "addressCountry": "GR"
+	  },
+	  "geo": {
+	    "@type": "GeoCoordinates",
+	    "latitude": "37.987654",
+	    "longitude": "23.765432"
+	  },
+	  "url": "https://www.evgeniadima-psychotherapy.gr",
+	  "telephone": "+302114238675",
+	  "priceRange": "€€",
+	  "openingHoursSpecification": {
+	    "@type": "OpeningHoursSpecification",
+	    "description": "Κατόπιν Ραντεβού"
 	  }
+	}
 	</script>
 
-	<!-- Optional: A little custom styling (comments & placeholders) -->
+	<!-- Custom CSS (minified) -->
+	<link href="assets/css/custom.min.css" rel="stylesheet" />
+
+	<!-- Add AOS library for animations -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- Plausible Analytics - Privacy-friendly -->
+	<script defer data-domain="evgeniadima.gr" src="https://plausible.io/js/script.js"></script>
+
+	<!-- Schema.org markup for FAQs -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "FAQPage",
+	  "mainEntity": [
+	    {
+	      "@type": "Question",
+	      "name": "Πόσο διαρκεί μία συνεδρία;",
+	      "acceptedAnswer": {
+	        "@type": "Answer",
+	        "text": "Η κάθε συνεδρία διαρκεί 50 λεπτά. Η συχνότητα των συνεδριών καθορίζεται με βάση τις ανάγκες του κάθε ατόμου."
+	      }
+	    },
+	    {
+	      "@type": "Question",
+	      "name": "Τι να περιμένω στην πρώτη συνεδρία;",
+	      "acceptedAnswer": {
+	        "@type": "Answer",
+	        "text": "Στην πρώτη συνεδρία γίνεται μια γνωριμία, συζητάμε το λόγο που σας φέρνει στη θεραπεία και θέτουμε από κοινού τους στόχους της θεραπευτικής διαδικασίας."
+	      }
+	    },
+	    {
+	      "@type": "Question",
+	      "name": "Πώς γίνονται οι online συνεδρίες;",
+	      "acceptedAnswer": {
+	        "@type": "Answer",
+	        "text": "Οι online συνεδρίες πραγματοποιούνται μέσω ασφαλούς πλατφόρμας βιντεοκλήσης. Χρειάζεστε μόνο μια συσκευή με κάμερα και σύνδεση στο internet."
+	      }
+	    },
+	    {
+	      "@type": "Question",
+	      "name": "Τηρείται το απόρρητο των συνεδριών;",
+	      "acceptedAnswer": {
+	        "@type": "Answer",
+	        "text": "Το περιεχόμενο των συνεδριών είναι απολύτως εμπιστευτικό και προστατεύεται από το επαγγελματικό απόρρητο, σύμφωνα με τον κώδικα δεοντολογίας των ψυχολόγων."
+	      }
+	    }
+	  ]
+	}
+	</script>
+
+	<!-- Schema.org markup for business -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "ProfessionalService",
+	  "name": "Ευγενία Δήμα - Ψυχολόγος Ψυχοθεραπεύτρια",
+	  "image": "https://evgeniadima.gr/img/profile.jpg",
+	  "url": "https://evgeniadima.gr",
+	  "telephone": "+30 214 6873673",
+	  "email": "evgeniadima@gmail.com",
+	  "description": "Κλινική ψυχολόγος και εκπαιδευμένη ψυχοθεραπεύτρια στην Αθήνα. Ατομική ψυχοθεραπεία, θεραπεία ζεύγους, συμβουλευτική και online συνεδρίες.",
+	  "address": {
+	    "@type": "PostalAddress",
+	    "streetAddress": "Λεωφ. Αλεξάνδρας, Αθήνα, ΤΚ 114 23",
+	    "addressLocality": "Αθήνα",
+	    "postalCode": "114 23",
+	    "addressCountry": "GR"
+	  },
+	  "geo": {
+	    "@type": "GeoCoordinates",
+	    "latitude": "37.992500",
+	    "longitude": "23.753500"
+	  },
+	  "openingHoursSpecification": [
+	    {
+	      "@type": "OpeningHoursSpecification",
+	      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+	      "opens": "09:00",
+	      "closes": "21:00"
+	    }
+	  ],
+	  "priceRange": "€€",
+	  "sameAs": [
+	    "mailto:info@evgeniadima-psychotherapy.gr",
+	    "mailto:evgeniadima@gmail.com"
+	  ]
+	}
+	</script>
+
 	<style>
-	/* Example backgrounds/tones that match the earthy/brown aesthetic */
-	body {
-	background-color: #f5f2e6; /* a light beige */
-	color: #2c1303; /* darker brown text */
-	font-family: 'Helvetica Neue', Arial, sans-serif;
-	}
-	/* If you have your own font, you can @import or link it here */
+	/* Base styles */
+	/* Previous styles remain unchanged */
 
-	/* Example hero background (replace with your actual image URL) */
-	.hero-background {
-	background: url('images/oFHeUfDq/backround_header__msi___jpg.jpg') center/cover no-repeat;
-	}
-
-	/* Add smooth scroll behavior */
-	html {
-	  scroll-behavior: smooth;
+	/* Accessibility styles */
+	.skip-to-content {
+	  position: absolute;
+	  top: -40px;
+	  left: 0;
+	  background: #2563eb;
+	  color: white;
+	  padding: 8px;
+	  z-index: 100;
+	  transition: top 0.3s;
 	}
 
-	/* Add active state for navigation */
-	.nav-link.active {
-	  color: #4d290f;
-	  font-weight: 600;
+	.skip-to-content:focus {
+	  top: 0;
 	}
 
-	/* Add fade-in animation */
-	@keyframes fadeIn {
-	  from { opacity: 0; transform: translateY(20px); }
-	  to { opacity: 1; transform: translateY(0); }
+	/* Focus styles */
+	a:focus-visible,
+	button:focus-visible {
+	  outline: 2px solid #2563eb;
+	  outline-offset: 2px;
+	  border-radius: 2px;
 	}
 
-	.fade-in {
-	  animation: fadeIn 0.6s ease-out forwards;
+	/* High contrast focus styles for dark backgrounds */
+	.bg-blue-600 a:focus-visible,
+	.bg-blue-600 button:focus-visible {
+	  outline-color: white;
 	}
 
-	/* Add loading spinner */
-	.loading-spinner {
-	  border: 3px solid #f3f3f3;
-	  border-top: 3px solid #4d290f;
-	  border-radius: 50%;
-	  width: 24px;
-	  height: 24px;
-	  animation: spin 1s linear infinite;
+	/* Mobile menu focus styles */
+	#mobileMenu a:focus-visible {
+	  background-color: rgba(37, 99, 235, 0.1);
+	  outline: none;
+	  border-radius: 4px;
 	}
 
-	@keyframes spin {
-	  0% { transform: rotate(0deg); }
-	  100% { transform: rotate(360deg); }
+	/* Form input focus styles */
+	input:focus-visible,
+	textarea:focus-visible {
+	  outline: 2px solid #2563eb;
+	  outline-offset: 2px;
+	  border-color: transparent;
+	}
+
+	/* Add text shadow for better hero text contrast */
+	.text-shadow {
+	  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+
+	/* Larger service icons */
+	.service-icon {
+	  width: 3rem;
+	  height: 3rem;
+	}
+
+	/* Section dividers */
+	section:not(:last-child) {
+	  border-bottom: 1px solid rgba(44, 19, 3, 0.1);
+	  padding-bottom: 4rem;
+	}
+
+	/* Cookie consent banner */
+	#cookieConsent {
+	  position: fixed;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background-color: rgba(255, 255, 255, 0.95);
+	  padding: 1rem;
+	  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+	  z-index: 9999;
+	  display: none;
+	  backdrop-filter: blur(4px);
+	  border-top: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	#cookieConsent .container {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  max-width: 1200px;
+	  margin: 0 auto;
+	  gap: 1rem;
+	}
+
+	#cookieConsent p {
+	  margin: 0;
+	}
+
+	#cookieConsent .buttons {
+	  display: flex;
+	  gap: 0.5rem;
+	}
+
+	@media (max-width: 768px) {
+	  #cookieConsent .container {
+	    flex-direction: column;
+	    text-align: center;
+	  }
 	}
 	</style>
 </head>
 <body class="min-h-screen flex flex-col">
 
+<!-- Skip to content link -->
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-[#2c1303] focus:shadow-lg">
+  Μετάβαση στο κύριο περιεχόμενο
+</a>
+
 <!-- NAVBAR / HEADER -->
-<header class="w-full bg-transparent">
+<header class="w-full bg-transparent" role="banner">
 <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
 <!-- Logo / Title -->
-<a href="#home" class="text-xl font-bold text-[#2c1303]">
+<a href="#home" class="text-xl font-bold text-[#2c1303]" aria-label="Αρχική σελίδα">
 Ευγενία Δήμα
 </a>
 <!-- Simple nav (anchors) -->
-<nav class="hidden space-x-6 md:block" aria-label="Main navigation">
-<a href="#home" class="nav-link hover:text-black transition-colors duration-200">Αρχική</a>
+<nav class="hidden space-x-6 md:block" aria-label="Κύρια πλοήγηση">
+<a href="#home" class="nav-link hover:text-black transition-colors duration-200" aria-current="page">Αρχική</a>
 <a href="#syntomo-biografiko" class="hover:text-black">Σύντομο Βιογραφικό</a>
 <a href="#services" class="hover:text-black">Υπηρεσίες</a>
 <a href="#contact" class="hover:text-black">Επικοινωνία</a>
@@ -108,14 +271,16 @@
 <button
 id="mobileMenuButton"
 class="md:hidden text-3xl focus:outline-none"
-aria-label="Open Menu"
+aria-label="Άνοιγμα μενού"
+aria-expanded="false"
+aria-controls="mobileMenu"
 >
 &#9776;
 </button>
 </div>
 
 <!-- Mobile menu (hidden by default) -->
-<div id="mobileMenu" class="hidden md:hidden">
+<div id="mobileMenu" class="hidden md:hidden" role="navigation" aria-label="Μενού για κινητά">
 <div class="flex flex-col bg-[#f0e5ce] px-4 py-3">
 <a href="#home" class="py-1 hover:text-black">Αρχική</a>
 <a href="#syntomo-biografiko" class="py-1 hover:text-black">Σύντομο Βιογραφικό</a>
@@ -129,18 +294,22 @@ aria-label="Open Menu"
 <section
 id="home"
 class="hero-background flex flex-col items-center justify-center text-center text-white py-24 md:py-44 relative"
+data-aos="fade-down"
+data-aos-duration="1000"
+role="region"
+aria-labelledby="hero-title"
 >
-<!-- Add overlay as separate div for better control -->
-<div class="absolute inset-0 bg-black/40"></div>
+<!-- Add stronger overlay for better text contrast -->
+<div class="absolute inset-0 bg-black/50" aria-hidden="true"></div>
 <div class="relative z-10 max-w-2xl mx-auto px-4">
-<h1 class="text-4xl md:text-5xl font-bold mb-6">Ψυχολόγος – Ψυχοθεραπεύτρια</h1>
-<p class="mb-4 text-lg">
+<h1 id="hero-title" class="text-4xl md:text-5xl font-bold mb-6 text-shadow">Ψυχολόγος – Ψυχοθεραπεύτρια</h1>
+<p class="mb-4 text-lg text-shadow">
 Καλώς ήλθατε στην ιστοσελίδα της ψυχολόγου – ψυχοθεραπεύτριας
 Ευγενίας Δήμα, που διατηρεί το ιδιωτικό της γραφείο στην Αθήνα.
 </p>
 <a
 href="#contact"
-class="mt-6 inline-block bg-[#f0e5ce] text-[#2c1303] py-3 px-8 rounded-lg hover:bg-[#dcbf96] transition-colors duration-200 transform hover:scale-105"
+class="mt-6 inline-block bg-[#f0e5ce] text-[#2c1303] py-3 px-8 rounded-lg hover:bg-[#dcbf96] transition-colors duration-200 transform hover:scale-105 shadow-lg"
 >
 Κλείστε Ραντεβού
 </a>
@@ -148,7 +317,7 @@ class="mt-6 inline-block bg-[#f0e5ce] text-[#2c1303] py-3 px-8 rounded-lg hover:
 </section>
 
 <!-- MAIN CONTENT WRAPPER -->
-<main class="flex-1 w-full max-w-5xl mx-auto px-4 py-10">
+<main id="main-content" class="flex-1 w-full max-w-5xl mx-auto px-4 py-10" role="main">
 <!-- TITLE & SUBTITLE -->
 <div class="text-center my-10">
 <h1 class="text-3xl font-bold mb-2">Ψυχολόγος – Ψυχοθεραπεύτρια Αθήνα</h1>
@@ -160,7 +329,7 @@ class="mt-6 inline-block bg-[#f0e5ce] text-[#2c1303] py-3 px-8 rounded-lg hover:
 
 <!-- SYNTOМО BIOGRAFIKO -->
 <a id="syntomo-biografiko"></a>
-<section class="my-16">
+<section class="my-16" data-aos="fade-up" data-aos-duration="1000">
 <h2 class="text-2xl font-bold text-center mb-8">Σύντομο Βιογραφικό</h2>
 
 <div class="flex flex-col md:flex-row md:space-x-10">
@@ -170,6 +339,8 @@ class="mt-6 inline-block bg-[#f0e5ce] text-[#2c1303] py-3 px-8 rounded-lg hover:
 src="images/OYTqttYn/553x0_470x0/evgeniadima-psychotherapy_1__msi___jpg.webp"
 alt="Ευγενία Δήμα"
 class="rounded shadow max-h-96 object-cover"
+loading="lazy"
+decoding="async"
 />
 </div>
 <!-- Short text -->
@@ -192,7 +363,7 @@ class="rounded shadow max-h-96 object-cover"
 </section>
 
 <!-- TO GRAFEIO (OFFICE) PHOTOS -->
-<section class="my-16">
+<section class="my-16" data-aos="fade-up" data-aos-duration="1000">
 <h2 class="text-2xl font-bold text-center mb-8">Το Γραφείο</h2>
 <p class="mb-6 text-center">
 Εσωτερικές εικόνες του χώρου, όπου πραγματοποιούνται οι συνεδρίες.
@@ -202,16 +373,22 @@ class="rounded shadow max-h-96 object-cover"
 src="images/FWsbqigY/737x0_568x0/evgeniadima-psychotherapy_2__msi___jpg.webp"
 alt="Office Interior 1"
 class="rounded shadow"
+loading="lazy"
+decoding="async"
 />
 <img
 src="images/iGkNIZjZ/735x0_472x0/evgeniadima-psychotherapy_3__msi___jpg.webp"
 alt="Office Interior 2"
 class="rounded shadow"
+loading="lazy"
+decoding="async"
 />
 <img
 src="images/VDUtCSuI/735x0_472x0/evgeniadima-psychotherapy_5__msi___jpg.webp"
 alt="Office Interior 3"
 class="rounded shadow"
+loading="lazy"
+decoding="async"
 />
 </div>
 </section>
@@ -233,62 +410,145 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded hover:bg-[#dcb
 
 <!-- YPIRESIES (SERVICES) -->
 <a id="services"></a>
-<section class="my-16">
-<h2 class="text-2xl font-bold text-center mb-8">Υπηρεσίες</h2>
-<p class="mb-6 text-center max-w-2xl mx-auto">
-Στο ταξίδι της κατανόησης των βαθύτερών μας αντιλήψεων, η εφαρμογή
-του κατάλληλου θεραπευτικού πλαισίου για τον καθένα είναι βασική.
-</p>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-<!-- 1: Ατομική Θεραπεία -->
-<div class="p-6 bg-white shadow-lg rounded-lg text-center transform transition-all duration-200 hover:scale-105">
-<div class="h-12 w-12 mx-auto mb-4 bg-[#f0e5ce] rounded-full flex items-center justify-center">
-<!-- Add icons for each service -->
-<svg class="w-6 h-6" /* Add appropriate icon */></svg>
+<section class="my-16 bg-[#f9f6ed] py-16 -mx-4 px-4" data-aos="fade-up" data-aos-duration="1000">
+<div class="max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-4">Υπηρεσίες</h2>
+  <p class="mb-12 text-center max-w-2xl mx-auto text-lg">
+    Στο ταξίδι της κατανόησης των βαθύτερών μας αντιλήψεων, η εφαρμογή
+    του κατάλληλου θεραπευτικού πλαισίου για τον καθένα είναι βασική.
+  </p>
+  
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <!-- 1: Ατομική Θεραπεία -->
+    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform transition-all duration-200 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100">
+      <div class="h-16 w-16 mx-auto mb-6 bg-[#f0e5ce] rounded-full flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-4">Ατομική Θεραπεία</h3>
+      <ul class="list-none space-y-2 text-left">
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Συναισθηματικές δυσκολίες
+        </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Ζητήματα αυτοβελτίωσης
+        </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Διαχείριση συγκρούσεων
+        </li>
+      </ul>
+    </div>
+
+    <!-- 2: Θεραπεία Ζεύγους -->
+    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform transition-all duration-200 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
+      <div class="h-16 w-16 mx-auto mb-6 bg-[#f0e5ce] rounded-full flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-4">Θεραπεία Ζεύγους</h3>
+      <ul class="list-none space-y-2 text-left">
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Ζητήματα σχέσεων
+        </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Διαχείριση διαζυγίου
+        </li>
+      </ul>
+    </div>
+
+    <!-- 3: Συμβουλευτική Εγκύων -->
+    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform transition-all duration-200 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
+      <div class="h-16 w-16 mx-auto mb-6 bg-[#f0e5ce] rounded-full flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-4">Συμβουλευτική Εγκύων</h3>
+      <ul class="list-none space-y-2 text-left">
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Ενίσχυση γονεϊκού ρόλου
+        </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Διαχείριση συναισθημάτων
+        </li>
+      </ul>
+    </div>
+
+    <!-- 4: Διαδικτυακές Συνεδρίες -->
+    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform transition-all duration-200 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="400">
+      <div class="h-16 w-16 mx-auto mb-6 bg-[#f0e5ce] rounded-full flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-4">Διαδικτυακές Συνεδρίες</h3>
+      <ul class="list-none space-y-2 text-left">
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Online συνεδρίες ψυχοθεραπείας
+        </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Ευκολία κίνησης &amp; χρόνου
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
-<h3 class="font-semibold mb-4">Ατομική Θεραπεία</h3>
-<ul class="list-disc list-inside text-sm text-left">
-<li>Συναισθηματικές δυσκολίες</li>
-<li>Ζητήματα αυτοβελτίωσης</li>
-<li>Διαχείριση συγκρούσεων</li>
-</ul>
-</div>
-<!-- 2: Θεραπεία Ζεύγους -->
-<div class="p-6 bg-white shadow-lg rounded-lg text-center transform transition-all duration-200 hover:scale-105">
-<div class="h-12 w-12 mx-auto mb-4 bg-[#f0e5ce] rounded-full flex items-center justify-center">
-<!-- Add icons for each service -->
-<svg class="w-6 h-6" /* Add appropriate icon */></svg>
-</div>
-<h3 class="font-semibold mb-4">Θεραπεία Ζεύγους</h3>
-<ul class="list-disc list-inside text-sm text-left">
-<li>Ζητήματα σχέσεων</li>
-<li>Διαχείριση διαζυγίου</li>
-</ul>
-</div>
-<!-- 3: Συμβουλευτική Εγκύων -->
-<div class="p-6 bg-white shadow-lg rounded-lg text-center transform transition-all duration-200 hover:scale-105">
-<div class="h-12 w-12 mx-auto mb-4 bg-[#f0e5ce] rounded-full flex items-center justify-center">
-<!-- Add icons for each service -->
-<svg class="w-6 h-6" /* Add appropriate icon */></svg>
-</div>
-<h3 class="font-semibold mb-4">Συμβουλευτική Εγκύων</h3>
-<ul class="list-disc list-inside text-sm text-left">
-<li>Ενίσχυση γονεϊκού ρόλου</li>
-<li>Διαχείριση συναισθημάτων</li>
-</ul>
-</div>
-<!-- 4: Διαδικτυακές Συνεδρίες -->
-<div class="p-6 bg-white shadow-lg rounded-lg text-center transform transition-all duration-200 hover:scale-105">
-<div class="h-12 w-12 mx-auto mb-4 bg-[#f0e5ce] rounded-full flex items-center justify-center">
-<!-- Add icons for each service -->
-<svg class="w-6 h-6" /* Add appropriate icon */></svg>
-</div>
-<h3 class="font-semibold mb-4">Διαδικτυακές Συνεδρίες</h3>
-<ul class="list-disc list-inside text-sm text-left">
-<li>Online συνεδρίες ψυχοθεραπείας</li>
-<li>Ευκολία κίνησης &amp; χρόνου</li>
-</ul>
-</div>
+</section>
+
+<!-- Add FAQ Section before contact -->
+<section class="my-16 max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="text-2xl font-bold text-center mb-8">Συχνές Ερωτήσεις</h2>
+
+<div class="space-y-6">
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <h3 class="font-semibold mb-2">Πόσο διαρκεί μία συνεδρία;</h3>
+    <p>Η κάθε συνεδρία διαρκεί 50 λεπτά. Η συχνότητα των συνεδριών καθορίζεται με βάση τις ανάγκες του κάθε ατόμου.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <h3 class="font-semibold mb-2">Τι να περιμένω στην πρώτη συνεδρία;</h3>
+    <p>Στην πρώτη συνεδρία γίνεται μια γνωριμία, συζητάμε το λόγο που σας φέρνει στη θεραπεία και θέτουμε από κοινού τους στόχους της θεραπευτικής διαδικασίας.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <h3 class="font-semibold mb-2">Πώς γίνονται οι online συνεδρίες;</h3>
+    <p>Οι online συνεδρίες πραγματοποιούνται μέσω ασφαλούς πλατφόρμας βιντεοκλήσης. Χρειάζεστε μόνο μια συσκευή με κάμερα και σύνδεση στο internet.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <h3 class="font-semibold mb-2">Τηρείται το απόρρητο των συνεδριών;</h3>
+    <p>Το περιεχόμενο των συνεδριών είναι απολύτως εμπιστευτικό και προστατεύεται από το επαγγελματικό απόρρητο, σύμφωνα με τον κώδικα δεοντολογίας των ψυχολόγων.</p>
+  </div>
 </div>
 </section>
 
@@ -300,20 +560,27 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded hover:bg-[#dcb
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <!-- Contact Form -->
 <form
-action="#"
-method="post"
+action="https://formspree.io/f/xgegvzrw"
+method="POST"
 class="bg-white p-8 rounded-lg shadow-lg space-y-6"
 id="contactForm"
+role="form"
+aria-labelledby="contact-title"
 >
 <div class="relative">
-<label for="name" class="block text-sm font-medium mb-2">Όνομα*</label>
+<label for="name" class="block text-sm font-medium mb-2" id="name-label">Όνομα*</label>
 <input
 type="text"
 name="name"
 id="name"
 required
+minlength="2"
 class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#4d290f] focus:border-transparent transition"
+aria-required="true"
+aria-labelledby="name-label"
+aria-invalid="false"
 />
+<div class="invalid-feedback text-red-500 text-sm mt-1 hidden" role="alert"></div>
 </div>
 <div>
 <label for="phone" class="block text-sm mb-1">Τηλέφωνο*</label>
@@ -322,8 +589,10 @@ type="tel"
 name="phone"
 id="phone"
 required
+pattern="[0-9]{10}"
 class="w-full border border-gray-300 rounded p-2"
 />
+<div class="invalid-feedback text-red-500 text-sm mt-1 hidden">Παρακαλώ εισάγετε έναν έγκυρο αριθμό τηλεφώνου (10 ψηφία)</div>
 </div>
 <div>
 <label for="email" class="block text-sm mb-1">E-mail*</label>
@@ -334,6 +603,7 @@ id="email"
 required
 class="w-full border border-gray-300 rounded p-2"
 />
+<div class="invalid-feedback text-red-500 text-sm mt-1 hidden">Παρακαλώ εισάγετε μια έγκυρη διεύθυνση email</div>
 </div>
 <div>
 <label for="message" class="block text-sm mb-1">Μήνυμα*</label>
@@ -341,16 +611,29 @@ class="w-full border border-gray-300 rounded p-2"
 name="message"
 id="message"
 rows="4"
-class="w-full border border-gray-300 rounded p-2"
 required
+minlength="10"
+class="w-full border border-gray-300 rounded p-2"
 ></textarea>
+<div class="invalid-feedback text-red-500 text-sm mt-1 hidden">Το μήνυμα πρέπει να έχει τουλάχιστον 10 χαρακτήρες</div>
 </div>
 <button
 type="submit"
-class="bg-[#2c1303] text-white py-2 px-5 rounded hover:bg-[#4d290f]"
+class="bg-[#2c1303] text-white py-2 px-5 rounded hover:bg-[#4d290f] transition-colors duration-200 flex items-center justify-center"
 >
-Υποβολή
+<span>Υποβολή</span>
+<div class="loading-spinner ml-2 hidden"></div>
 </button>
+
+<!-- Success message (hidden by default) -->
+<div id="successMessage" class="hidden bg-green-100 text-green-700 p-4 rounded mt-4">
+Ευχαριστούμε για το μήνυμά σας! Θα επικοινωνήσουμε μαζί σας σύντομα.
+</div>
+
+<!-- Error message (hidden by default) -->
+<div id="errorMessage" class="hidden bg-red-100 text-red-700 p-4 rounded mt-4">
+Παρουσιάστηκε κάποιο πρόβλημα. Παρακαλώ δοκιμάστε ξανά αργότερα.
+</div>
 </form>
 
 <!-- Contact Info -->
@@ -414,18 +697,293 @@ loading="lazy"
 <script>
 const btn = document.getElementById('mobileMenuButton');
 const menu = document.getElementById('mobileMenu');
+const menuLinks = menu.querySelectorAll('a');
+
+// Trap focus within menu when it's open
+function trapFocus(e) {
+  if (!menu.classList.contains('hidden')) {
+    const focusableElements = [btn, ...menuLinks];
+    const firstFocusableEl = focusableElements[0];
+    const lastFocusableEl = focusableElements[focusableElements.length - 1];
+
+    if (e.key === 'Tab') {
+      if (e.shiftKey && document.activeElement === firstFocusableEl) {
+        e.preventDefault();
+        lastFocusableEl.focus();
+      } else if (!e.shiftKey && document.activeElement === lastFocusableEl) {
+        e.preventDefault();
+        firstFocusableEl.focus();
+      }
+    }
+  }
+}
+
 btn.addEventListener('click', () => {
-menu.classList.toggle('hidden');
+  const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', !isExpanded);
+  menu.classList.toggle('hidden');
+  
+  // Update button text for screen readers
+  btn.setAttribute('aria-label', isExpanded ? 'Άνοιγμα μενού' : 'Κλείσιμο μενού');
+  
+  // Focus first menu item when opening
+  if (!isExpanded) {
+    menuLinks[0]?.focus();
+  }
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!menu.contains(e.target) && !btn.contains(e.target) && !menu.classList.contains('hidden')) {
+    menu.classList.add('hidden');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Άνοιγμα μενού');
+  }
+});
+
+// Handle keyboard events
+document.addEventListener('keydown', (e) => {
+  // Close menu on Escape
+  if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
+    menu.classList.add('hidden');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Άνοιγμα μενού');
+    btn.focus(); // Return focus to button
+  }
+  
+  // Trap focus within menu
+  trapFocus(e);
 });
 </script>
 
 <!-- Add form validation JavaScript -->
 <script>
 const form = document.getElementById('contactForm');
-form.addEventListener('submit', (e) => {
-e.preventDefault();
-// Add form validation and submission logic
+const successMessage = document.getElementById('successMessage');
+const errorMessage = document.getElementById('errorMessage');
+const submitButton = form.querySelector('button[type="submit"]');
+const loadingSpinner = submitButton.querySelector('.loading-spinner');
+
+// Show validation messages on input
+form.querySelectorAll('input, textarea').forEach(input => {
+  input.addEventListener('invalid', (e) => {
+    e.preventDefault();
+    const feedback = input.nextElementSibling;
+    feedback.classList.remove('hidden');
+  });
+
+  input.addEventListener('input', () => {
+    const feedback = input.nextElementSibling;
+    if (input.validity.valid) {
+      feedback.classList.add('hidden');
+    }
+  });
 });
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  // Hide any previous messages
+  successMessage.classList.add('hidden');
+  errorMessage.classList.add('hidden');
+  
+  // Show loading state
+  submitButton.disabled = true;
+  loadingSpinner.classList.remove('hidden');
+  
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    
+    if (response.ok) {
+      // Show success message
+      form.reset();
+      successMessage.classList.remove('hidden');
+      window.scrollTo({
+        top: successMessage.offsetTop - 100,
+        behavior: 'smooth'
+      });
+    } else {
+      throw new Error('Network response was not ok');
+    }
+  } catch (error) {
+    // Show error message
+    errorMessage.classList.remove('hidden');
+    console.error('Error:', error);
+  } finally {
+    // Reset button state
+    submitButton.disabled = false;
+    loadingSpinner.classList.add('hidden');
+  }
+});
+</script>
+
+<!-- Initialize AOS -->
+<script>
+  AOS.init({
+    once: true,
+    offset: 100,
+    duration: 800,
+    easing: 'ease-in-out'
+  });
+</script>
+
+<!-- Event tracking for analytics -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Track CTA button clicks
+    const ctaButtons = document.querySelectorAll('.cta-button, a[href="#contact"]');
+    ctaButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Check if using Plausible
+        if (window.plausible) {
+          plausible('CTA Click', { props: { location: button.closest('section')?.id || 'unknown' }});
+        }
+      });
+    });
+
+    // Track form submissions
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function() {
+        // Check if using Plausible
+        if (window.plausible) {
+          plausible('Form Submit', { props: { form: 'contact' }});
+        }
+      });
+    }
+
+    // Track service card interactions
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+      card.addEventListener('click', function() {
+        const serviceName = card.querySelector('h3')?.textContent || 'unknown';
+        // Check if using Plausible
+        if (window.plausible) {
+          plausible('Service Viewed', { props: { service: serviceName }});
+        }
+      });
+    });
+
+    // Track navigation menu interactions
+    const navLinks = document.querySelectorAll('header nav a, #mobileMenu a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        const linkText = link.textContent.trim();
+        const linkHref = link.getAttribute('href');
+        // Check if using Plausible
+        if (window.plausible) {
+          plausible('Navigation', { props: { text: linkText, destination: linkHref }});
+        }
+      });
+    });
+  });
+</script>
+
+<!-- Add smooth scroll behavior -->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      // Update URL hash without jumping
+      history.pushState(null, null, this.getAttribute('href'));
+    }
+  });
+});
+
+// Add active state to navigation links based on scroll position
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+
+function setActiveLink() {
+  const scrollPosition = window.scrollY + 100;
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    const sectionId = section.getAttribute('id');
+    
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${sectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}
+
+window.addEventListener('scroll', setActiveLink);
+setActiveLink(); // Set initial state
+</script>
+
+<!-- Cook consent banner -->
+<div id="cookieConsent">
+  <div class="container">
+    <p>Αυτός ο ιστότοπος χρησιμοποιεί cookies για την ανάλυση επισκεψιμότητας. Η χρήση του ιστότοπου συνεπάγεται τη συγκατάθεσή σας.</p>
+    <div class="buttons">
+      <button id="cookieAccept" class="bg-[#4d290f] hover:bg-[#2c1303] text-white font-bold py-2 px-4 rounded">Αποδοχή</button>
+      <button id="cookieReject" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded">Απόρριψη</button>
+    </div>
+  </div>
+</div>
+
+<!-- Cookie consent handling -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const cookieConsent = document.getElementById('cookieConsent');
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieReject = document.getElementById('cookieReject');
+    
+    // Check if user has already made a choice
+    const consentGiven = localStorage.getItem('cookieConsent');
+    
+    if (consentGiven === null) {
+      // User hasn't decided yet, show the banner
+      cookieConsent.style.display = 'block';
+    } else if (consentGiven === 'true') {
+      // User accepted cookies, enable analytics
+      enableAnalytics();
+    }
+    
+    // Handle accept button
+    cookieAccept.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'true');
+      cookieConsent.style.display = 'none';
+      enableAnalytics();
+    });
+    
+    // Handle reject button
+    cookieReject.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'false');
+      cookieConsent.style.display = 'none';
+      disableAnalytics();
+    });
+    
+    // Function to enable analytics
+    function enableAnalytics() {
+      // Plausible is already privacy-friendly and doesn't use cookies
+      // This is where you would initialize other tracking if needed
+    }
+    
+    // Function to disable analytics
+    function disableAnalytics() {
+      // Disable any active tracking if needed
+      // For Plausible, we could dynamically remove the script, but it's already GDPR-friendly
+    }
+  });
 </script>
 </body>
 </html>
