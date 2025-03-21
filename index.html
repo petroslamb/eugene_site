@@ -552,13 +552,14 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <!-- Contact Form - Simplify style to match Carrd site -->
 <form
-action="https://formspree.io/f/xgegvzrw"
+action="https://formspree.io/f/mgvaaylr"
 method="POST"
 class="bg-white/80 p-8 rounded-none shadow-sm space-y-5"
 id="contactForm"
 role="form"
 aria-labelledby="contact-title"
 >
+<input type="text" name="_gotcha" style="display:none" />
 <div class="relative">
 <label for="name" class="block text-sm font-medium mb-2" id="name-label">Όνομα*</label>
 <input
@@ -624,7 +625,7 @@ class="bg-[#2c1303] text-white py-2.5 px-5 rounded-none hover:bg-[#4d290f] trans
 
 <!-- Error message (hidden by default) -->
 <div id="errorMessage" class="hidden bg-red-100 text-red-700 p-4 rounded mt-4">
-Παρουσιάστηκε κάποιο πρόβλημα. Παρακαλώ δοκιμάστε ξανά αργότερα.
+Παρουσιάστηκε κάποιο πρόβλημα. Παρακαλώ δοκιμάστε να επικοινωνήσετε απευθείας στο email: info@evgeniadima-psychotherapy.gr ή καλέστε στο 211 4238675.
 </div>
 </form>
 
@@ -884,12 +885,14 @@ loading="lazy"
       if (loadingSpinner) loadingSpinner.classList.remove('hidden');
       
       try {
+        const formData = new FormData(form);
         const response = await fetch(form.action, {
           method: 'POST',
-          body: new FormData(form),
+          body: formData,
           headers: {
             'Accept': 'application/json'
-          }
+          },
+          mode: 'cors'
         });
         
         if (response.ok) {
@@ -905,7 +908,12 @@ loading="lazy"
           // Log analytics event
           logAnalyticsEvent('Form Submit', { form: 'contact', status: 'success' });
         } else {
-          throw new Error('Network response was not ok');
+          console.error('Server responded with:', response.status, response.statusText);
+          
+          // Fallback: Submit the form traditionally
+          console.log('Attempting traditional form submission as fallback...');
+          form.submit();
+          return;
         }
       } catch (error) {
         // Show error message
