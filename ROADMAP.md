@@ -53,7 +53,7 @@
 - [ ] Improve footer with additional information
 - [ ] Add dark mode support
 - [ ] Create a print-friendly stylesheet
-- [ ] Add microinteractions for better engagement
+- [x] Add microinteractions for better engagement
 - [ ] Implement progressive web app (PWA) features
 - [x] Add schema markup for FAQ section
 - [ ] Create an emergency resources page
