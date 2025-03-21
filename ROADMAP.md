@@ -28,7 +28,7 @@
 - [x] Add FAQ section
 - [ ] Add a testimonials section (if applicable) - **Medium Priority**
 - [x] Enhance the hero section with better call-to-action and contrast
-- [ ] Add a "Why Choose Me" section highlighting unique approach - **High Priority**
+- [x] Add a "Why Choose Me" section highlighting unique approach - **High Priority**
 - [ ] Create a blog/resources section for mental health articles - **Medium Priority**
 - [ ] Add a pricing information section (if applicable) - **Medium Priority**
 
@@ -49,7 +49,7 @@
 ## Additional Enhancements
 - [x] Add cookie consent banner
 - [x] Create a 404 error page
-- [ ] Add appointment scheduling integration - **High Priority**
+- [x] Add appointment scheduling integration - **High Priority**
 - [x] Improve footer with additional information
 - [ ] Add dark mode support - **Low Priority**
 - [ ] Create a print-friendly stylesheet - **Low Priority**
