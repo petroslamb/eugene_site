@@ -19,7 +19,7 @@ h1, h2, h3, h4 {
   min-height: 85vh;
   position: relative;
 }
-.nav-link.active{color:#4d290f;font-weight:400}
+.nav-link.active{font-weight:400}
 @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .fade-in{animation:fadeIn .6s ease-out forwards}
 .loading-spinner{border:2px solid rgba(255, 255, 255, 0.3);border-top-color:white;border-radius:50%;width:20px;height:20px;animation:spin 1s linear infinite}
@@ -200,7 +200,8 @@ button[type="submit"]:hover::after {
 /* Navigation link microinteractions */
 .nav-link {
   position: relative;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  color: white;
 }
 
 .nav-link::after {
@@ -219,7 +220,7 @@ button[type="submit"]:hover::after {
   width: 100%;
 }
 
-/* Ensure the active state style is distinct */
+/* Ensure the active state style is distinct without changing color */
 .nav-link.active {
   font-weight: 400;
 }

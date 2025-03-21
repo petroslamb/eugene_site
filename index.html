@@ -213,6 +213,22 @@
 	  scroll-margin-top: 5rem;
 	}
 
+	/* Active nav link styles */
+	.nav-link.active {
+	  position: relative;
+	  font-weight: normal;
+	}
+
+	.nav-link.active::after {
+	  content: '';
+	  position: absolute;
+	  bottom: -5px;
+	  left: 0;
+	  width: 100%;
+	  height: 2px;
+	  background-color: white;
+	}
+
 	/* Cookie consent banner */
 	#cookieConsent {
 	  position: fixed;
@@ -268,6 +284,7 @@
     <nav>
       <ul class="hidden md:flex space-x-6 font-light tracking-wide">
         <li><a href="#home" class="nav-link transition-colors duration-300">Αρχική</a></li>
+        <li><a href="#approach" class="nav-link transition-colors duration-300">Προσέγγιση</a></li>
         <li><a href="#about" class="nav-link transition-colors duration-300">Σχετικά</a></li>
         <li><a href="#services" class="nav-link transition-colors duration-300">Υπηρεσίες</a></li>
         <li><a href="#contact" class="nav-link transition-colors duration-300">Επικοινωνία</a></li>
@@ -283,6 +300,7 @@
   <div id="mobile-menu" class="hidden md:hidden bg-[#8e9b80]/90 backdrop-blur-sm absolute top-full left-0 right-0 p-4">
     <ul class="flex flex-col space-y-3 font-light tracking-wide">
       <li><a href="#home" class="nav-link block transition-colors duration-300">Αρχική</a></li>
+      <li><a href="#approach" class="nav-link block transition-colors duration-300">Προσέγγιση</a></li>
       <li><a href="#about" class="nav-link block transition-colors duration-300">Σχετικά</a></li>
       <li><a href="#services" class="nav-link block transition-colors duration-300">Υπηρεσίες</a></li>
       <li><a href="#contact" class="nav-link block transition-colors duration-300">Επικοινωνία</a></li>
@@ -320,6 +338,41 @@ class="inline-block bg-[#f0e5ce]/90 text-[#2c1303] py-2 px-6 rounded-none hover:
     <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
   </svg>
 </div>
+</section>
+
+<!-- NEW SECTION: Therapeutic Approach -->
+<section id="approach" class="my-16 py-16 bg-[#f7f3e8]" data-aos="fade-up" data-aos-duration="1000">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-2xl font-serif text-center mb-10 tracking-wide">Η Ψυχοθεραπευτική Προσέγγιση</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div>
+        <h3 class="text-lg font-medium mb-4 tracking-wide">Συστημική Ψυχοθεραπεία</h3>
+        <p class="mb-4 text-sm leading-relaxed">
+          Η συστημική ψυχοθεραπεία αναγνωρίζει ότι οι άνθρωποι δεν ζουν απομονωμένοι, αλλά σε σχέση με τους άλλους, σε διάφορα συστήματα όπως η οικογένεια, οι σχέσεις και το ευρύτερο κοινωνικό περιβάλλον.
+        </p>
+        <p class="text-sm leading-relaxed">
+          Σε αυτή την προσέγγιση, εξετάζουμε τις σχέσεις και τις αλληλεπιδράσεις που συμβάλλουν στις δυσκολίες που αντιμετωπίζετε, αναζητώντας νέους τρόπους σκέψης, συμπεριφοράς και επικοινωνίας που οδηγούν σε θετικές αλλαγές.
+        </p>
+      </div>
+      
+      <div>
+        <h3 class="text-lg font-medium mb-4 tracking-wide">Η Θεραπευτική Σχέση</h3>
+        <p class="mb-4 text-sm leading-relaxed">
+          Η ψυχοθεραπεία είναι μια συνεργατική διαδικασία μεταξύ θεραπευτή και θεραπευόμενου. Δημιουργούμε έναν ασφαλή χώρο όπου μπορείτε να εκφραστείτε ελεύθερα, χωρίς κριτική ή επίκριση.
+        </p>
+        <p class="text-sm leading-relaxed">
+          Μέσα σε αυτή τη σχέση εμπιστοσύνης, εξερευνούμε μαζί τις εμπειρίες σας, τις σκέψεις και τα συναισθήματά σας, οδηγώντας σε βαθύτερη κατανόηση του εαυτού σας και των σχέσεών σας, και ανοίγοντας τον δρόμο για ουσιαστικές αλλαγές στη ζωή σας.
+        </p>
+      </div>
+    </div>
+    
+    <div class="mt-10 text-center">
+      <p class="text-sm italic font-light">
+        "Η ψυχοθεραπεία είναι ένα ταξίδι αυτογνωσίας και προσωπικής ανάπτυξης που μας βοηθά να ζήσουμε μια πιο συνειδητή και ολοκληρωμένη ζωή."
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- MAIN CONTENT WRAPPER -->
@@ -362,6 +415,9 @@ class="inline-block bg-[#f0e5ce]/90 text-[#2c1303] py-2 px-6 rounded-none hover:
     Αποφοίτησα από το τμήμα Ψυχολογίας του Παντείου Πανεπιστημίου και ολοκλήρωσα
     τετραετή εκπαίδευση στη Συστημική Ψυχοθεραπεία στο Ινστιτούτο "Λόγω Ψυχής".
     Έχω ασχοληθεί με ατομική θεραπεία, θεραπεία ζεύγους και περιγεννητική υποστήριξη.
+  </p>
+  <p class="mb-6 text-sm leading-relaxed">
+    Έχω ειδικευτεί στην παροχή ψυχολογικής στήριξης και θεραπείας για ένα εύρος συναισθηματικών δυσκολιών όπως το άγχος, η κατάθλιψη, οι κρίσεις πανικού και τα ζητήματα αυτοεκτίμησης. Παράλληλα, ασχολούμαι με τη διαχείριση και επίλυση συγκρούσεων σε διαπροσωπικές σχέσεις και την υποστήριξη ατόμων σε μεταβατικές φάσεις της ζωής τους.
   </p>
   <p class="text-sm leading-relaxed">
     Είμαι τακτικό μέλος του Συλλόγου Ελλήνων Ψυχολόγων (ΣΕΨ) και παρακολουθώ
@@ -415,8 +471,7 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
 </div>
 
 <!-- YPIRESIES (SERVICES) -->
-<a id="services"></a>
-<section class="my-24 reveal-section" data-aos="fade-up" data-aos-duration="1000">
+<section id="services" class="my-24 reveal-section" data-aos="fade-up" data-aos-duration="1000">
 <div class="max-w-4xl mx-auto">
   <h2 class="text-2xl font-serif text-center mb-10 tracking-wide">Υπηρεσίες & Υποστήριξη</h2>
   <p class="mb-12 text-center max-w-2xl mx-auto font-light">
@@ -452,7 +507,20 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
           </svg>
           Διαχείριση συγκρούσεων
         </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Άγχος και κρίσεις πανικού
+        </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Κατάθλιψη και διαχείριση πένθους
+        </li>
       </ul>
+      <p class="mt-4 text-sm font-light text-left">Ένας ασφαλής χώρος για να εξερευνήσετε τις σκέψεις και τα συναισθήματά σας, να αναπτύξετε νέες στρατηγικές αντιμετώπισης και να βελτιώσετε την ποιότητα ζωής σας.</p>
     </div>
 
     <!-- 2: Θεραπεία Ζεύγους -->
@@ -476,7 +544,20 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
           </svg>
           Διαχείριση διαζυγίου
         </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Προβλήματα επικοινωνίας
+        </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Επαναπροσδιορισμός σχέσης
+        </li>
       </ul>
+      <p class="mt-4 text-sm font-light text-left">Η θεραπεία ζεύγους βοηθά στην αποκατάσταση της επικοινωνίας, στην επίλυση των συγκρούσεων και στην οικοδόμηση μιας πιο υγιούς και ισορροπημένης σχέσης, είτε επιλέξετε να μείνετε μαζί είτε όχι.</p>
     </div>
 
     <!-- 3: Συμβουλευτική Εγκύων -->
@@ -500,7 +581,20 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
           </svg>
           Διαχείριση συναισθημάτων
         </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Επιλόχεια κατάθλιψη
+        </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Προσαρμογή στη νέα ζωή
+        </li>
       </ul>
+      <p class="mt-4 text-sm font-light text-left">Υποστήριξη κατά τη διάρκεια της εγκυμοσύνης και μετά τον τοκετό, βοηθώντας στη διαχείριση του άγχους, των φόβων και των προκλήσεων που συνδέονται με αυτή τη σημαντική αλλαγή στη ζωή σας.</p>
     </div>
 
     <!-- 4: Διαδικτυακές Συνεδρίες -->
@@ -525,14 +619,27 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
           </svg>
           Ευκολία κίνησης &amp; χρόνου
         </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Απόλυτη εχεμύθεια
+        </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mr-2 text-[#4d290f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Γεωγραφική ανεξαρτησία
+        </li>
       </ul>
+      <p class="mt-4 text-sm font-light text-left">Οι διαδικτυακές συνεδρίες προσφέρουν την ίδια θεραπευτική ποιότητα με τις δια ζώσης, ενώ σας επιτρέπουν να συμμετέχετε από τον προσωπικό σας χώρο, εξοικονομώντας χρόνο και προσφέροντας άνεση.</p>
     </div>
   </div>
 </div>
 </section>
 
 <!-- Add FAQ Section before contact - Style to match Carrd site -->
-<section class="my-24 max-w-3xl mx-auto reveal-section" data-aos="fade-up" data-aos-duration="1000">
+<section id="faq" class="my-24 max-w-3xl mx-auto reveal-section" data-aos="fade-up" data-aos-duration="1000">
 <h2 class="text-2xl font-serif text-center mb-10 tracking-wide">Συχνές Ερωτήσεις</h2>
 
 <div class="space-y-4">
@@ -544,6 +651,21 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
   <div class="p-6 rounded-none bg-white/80">
     <h3 class="text-base font-medium mb-3 tracking-wide">Online συνεδρίες - Για όσους βρίσκονται σε απόσταση ή δεν μπορούν να επισκεφθούν το γραφείο</h3>
     <p class="text-sm font-light leading-relaxed">Οι online συνεδρίες πραγματοποιούνται μέσω ασφαλούς πλατφόρμας βιντεοκλήσης. Χρειάζεστε μόνο μια συσκευή με κάμερα και σύνδεση στο internet.</p>
+  </div>
+
+  <div class="p-6 rounded-none bg-white/80">
+    <h3 class="text-base font-medium mb-3 tracking-wide">Πόσο διαρκεί μια συνεδρία και με ποια συχνότητα πραγματοποιείται;</h3>
+    <p class="text-sm font-light leading-relaxed">Η κάθε συνεδρία διαρκεί 50 λεπτά. Συνήθως, η θεραπεία ξεκινά με εβδομαδιαίες συναντήσεις. Η συχνότητα των συνεδριών μπορεί να προσαρμοστεί ανάλογα με τις ανάγκες σας. Καθώς η θεραπεία προχωρά, ενδέχεται να αραιώσουμε τις συναντήσεις σε δεκαπενθήμερες ή μηνιαίες.</p>
+  </div>
+
+  <div class="p-6 rounded-none bg-white/80">
+    <h3 class="text-base font-medium mb-3 tracking-wide">Τί είναι η Συστημική Ψυχοθεραπεία;</h3>
+    <p class="text-sm font-light leading-relaxed">Η Συστημική Ψυχοθεραπεία αντιμετωπίζει τα άτομα ως μέρη των συστημάτων στα οποία ανήκουν (οικογένεια, σχέσεις, κοινωνικό περιβάλλον). Εστιάζει στην αλληλεπίδραση μεταξύ των μελών και όχι μόνο στο άτομο. Μέσω αυτής της προσέγγισης, βοηθά στην κατανόηση των προτύπων συμπεριφοράς και επικοινωνίας, προάγοντας τη θετική αλλαγή στις σχέσεις και στην προσωπική ανάπτυξη.</p>
+  </div>
+
+  <div class="p-6 rounded-none bg-white/80">
+    <h3 class="text-base font-medium mb-3 tracking-wide">Πώς γνωρίζω αν χρειάζομαι ψυχοθεραπεία;</h3>
+    <p class="text-sm font-light leading-relaxed">Η ψυχοθεραπεία μπορεί να βοηθήσει σε διάφορες περιπτώσεις: όταν αντιμετωπίζετε έντονα αρνητικά συναισθήματα που επηρεάζουν την καθημερινότητά σας, όταν δυσκολεύεστε να διαχειριστείτε σημαντικές αλλαγές στη ζωή σας, όταν οι σχέσεις σας επηρεάζονται αρνητικά, ή όταν αναζητάτε προσωπική ανάπτυξη και αυτογνωσία. Μια αρχική συνεδρία μπορεί να σας βοηθήσει να αποφασίσετε αν η ψυχοθεραπεία είναι κατάλληλη για εσάς.</p>
   </div>
 </div>
 
@@ -615,6 +737,7 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
       <div class="text-left">
         <h3 class="text-xl font-serif mb-5">Συνδέσεις</h3>
         <ul class="space-y-3">
+          <li><a href="#approach" class="hover:underline">Ψυχοθεραπευτική Προσέγγιση</a></li>
           <li><a href="#about" class="hover:underline">Σχετικά με εμένα</a></li>
           <li><a href="#services" class="hover:underline">Υπηρεσίες</a></li>
           <li><a href="#faq" class="hover:underline">Συχνές Ερωτήσεις</a></li>
@@ -729,27 +852,70 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
   });
   
   // Highlight active nav link based on scroll position
-  const sections = document.querySelectorAll('section[id]');
+  const sections = document.querySelectorAll('section[id], div[id="home"], div[id="about"], div[id="services"], div[id="contact"], div[id="faq"]');
   const navLinks = document.querySelectorAll('.nav-link');
+  
+  // For debugging 
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('Found sections:');
+    sections.forEach(section => {
+      console.log('- ' + section.getAttribute('id'));
+    });
+    
+    console.log('Found nav links:');
+    navLinks.forEach(link => {
+      console.log('- ' + link.getAttribute('href'));
+    });
+  });
   
   function highlightNavLink() {
     const scrollPos = window.scrollY + 100; // Add offset for fixed header
+    
+    // Find the current section by checking which one is in the viewport
     let currentSection = '';
+    let closestSection = null;
+    let closestDistance = Number.MAX_VALUE;
     
     sections.forEach(section => {
+      if (!section) return; // Skip if section is null
+      
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
       const sectionId = section.getAttribute('id');
       
+      if (!sectionId) return; // Skip if section has no ID
+      
+      // Calculate how far we are from the top of this section
+      const distance = Math.abs(scrollPos - sectionTop);
+      
+      // If we're inside this section, set it as current
       if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
         currentSection = sectionId;
       }
+      
+      // Keep track of the closest section as a fallback
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestSection = sectionId;
+      }
     });
     
+    // If no current section is found, use the closest one
+    if (!currentSection) {
+      currentSection = closestSection;
+    }
+    
+    // Update active state of all nav links
     navLinks.forEach(link => {
-      link.classList.remove('active');
+      if (!link) return; // Skip if link is null
+      
       const href = link.getAttribute('href');
-      if (href === '#' + currentSection) {
+      if (!href) return; // Skip if link has no href
+      
+      link.classList.remove('active');
+      const targetId = href.substring(1); // Remove the # from href
+      
+      if (targetId === currentSection) {
         link.classList.add('active');
       }
     });
@@ -860,7 +1026,6 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
   });
   
   // Add event listeners for all scroll-related functions
-  window.addEventListener('scroll', highlightNavLink);
   window.addEventListener('scroll', updateHeaderBackground);
   window.addEventListener('scroll', checkReveal);
   
@@ -991,6 +1156,33 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
         }
       }
     });
+  });
+
+  // Call the function on scroll with throttling to improve performance
+  let scrollTimeout;
+  window.addEventListener('scroll', function() {
+    if (!scrollTimeout) {
+      scrollTimeout = setTimeout(function() {
+        highlightNavLink();
+        scrollTimeout = null;
+      }, 50);
+    }
+  });
+  
+  // Call it also on load
+  document.addEventListener('DOMContentLoaded', highlightNavLink);
+  
+  // AOS initialization
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+    
+    // Also call highlightNavLink after AOS initializes
+    setTimeout(highlightNavLink, 100);
   });
 </script>
 
