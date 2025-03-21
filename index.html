@@ -208,6 +208,11 @@
 	  padding-bottom: 4rem;
 	}
 
+	/* Scroll margin for anchors to account for fixed header */
+	.scroll-mt-20 {
+	  scroll-margin-top: 5rem;
+	}
+
 	/* Cookie consent banner */
 	#cookieConsent {
 	  position: fixed;
@@ -547,177 +552,157 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
 </p>
 </section>
 
-<!-- EPIKOINONIA (CONTACT) -->
-<a id="contact"></a>
-<section class="my-24 reveal-section">
-<h2 class="text-2xl font-serif text-center mb-10 tracking-wide">Επικοινωνία</h2>
+<!-- Add an anchor for contact navigation -->
+<a id="contact" class="scroll-mt-20"></a>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Contact Form - Simplify style to match Carrd site -->
-<form
-action="https://formspree.io/f/mgvaaylr"
-method="POST"
-class="bg-white/80 p-8 rounded-none shadow-sm space-y-5"
-id="contactForm"
-role="form"
-aria-labelledby="contact-title"
->
-<input type="text" name="_gotcha" style="display:none" />
-<div class="relative">
-<label for="name" class="block text-sm font-medium mb-2" id="name-label">Όνομα*</label>
-<input
-type="text"
-name="name"
-id="name"
-required
-minlength="2"
-class="w-full border border-gray-200 rounded-none p-2.5 focus:ring-0 focus:border-[#2c1303] transition text-sm"
-aria-required="true"
-aria-labelledby="name-label"
-aria-invalid="false"
-/>
-<div class="invalid-feedback text-red-500 text-sm mt-1 hidden" role="alert"></div>
-</div>
-<div>
-<label for="phone" class="block text-sm mb-1">Τηλέφωνο*</label>
-<input
-type="tel"
-name="phone"
-id="phone"
-required
-pattern="[0-9]{10}"
-class="w-full border border-gray-200 rounded p-2"
-/>
-<div class="invalid-feedback text-red-500 text-sm mt-1 hidden">Παρακαλώ εισάγετε έναν έγκυρο αριθμό τηλεφώνου (10 ψηφία)</div>
-</div>
-<div>
-<label for="email" class="block text-sm mb-1">E-mail*</label>
-<input
-type="email"
-name="email"
-id="email"
-required
-class="w-full border border-gray-200 rounded p-2"
-/>
-<div class="invalid-feedback text-red-500 text-sm mt-1 hidden">Παρακαλώ εισάγετε μια έγκυρη διεύθυνση email</div>
-</div>
-<div>
-<label for="message" class="block text-sm mb-1">Μήνυμα*</label>
-<textarea
-name="message"
-id="message"
-rows="4"
-required
-minlength="10"
-class="w-full border border-gray-200 rounded p-2"
-></textarea>
-<div class="invalid-feedback text-red-500 text-sm mt-1 hidden">Το μήνυμα πρέπει να έχει τουλάχιστον 10 χαρακτήρες</div>
-</div>
-<button
-type="submit"
-class="bg-[#2c1303] text-white py-2.5 px-5 rounded-none hover:bg-[#4d290f] transition-colors duration-300 flex items-center justify-center text-sm tracking-wide"
->
-<span>Υποβολή</span>
-<div class="loading-spinner ml-2 hidden"></div>
-</button>
-
-<!-- Success message (hidden by default) -->
-<div id="successMessage" class="hidden bg-green-100 text-green-700 p-4 rounded mt-4">
-Ευχαριστούμε για το μήνυμά σας! Θα επικοινωνήσουμε μαζί σας σύντομα.
-</div>
-
-<!-- Error message (hidden by default) -->
-<div id="errorMessage" class="hidden bg-red-100 text-red-700 p-4 rounded mt-4">
-Παρουσιάστηκε κάποιο πρόβλημα. Παρακαλώ δοκιμάστε να επικοινωνήσετε απευθείας στο email: info@evgeniadima-psychotherapy.gr ή καλέστε στο 211 4238675.
-</div>
-</form>
-
-<!-- Contact Info - Simplify styling -->
-<div class="bg-white/80 p-8 rounded-none shadow-sm">
-<h3 class="font-medium mb-5 tracking-wide">Στοιχεία Επικοινωνίας:</h3>
-<p class="mb-4 text-sm">
-<strong>Κλινική Ψυχολόγος – Συστημική Ψυχοθεραπεύτρια</strong><br>
-Αώου 9, Αμπελόκηποι, Αθήνα, Τ.Κ. 115 23
-</p>
-<p class="mb-2">
-Τηλέφωνο:&nbsp;
-<a href="tel:+302114238675" class="underline">
-211 4238675
-</a>
-</p>
-<p class="mb-2">
-Email:&nbsp;
-<a href="mailto:info@evgeniadima-psychotherapy.gr" class="underline">
-info@evgeniadima-psychotherapy.gr
-</a>
-</p>
-<p class="mb-2">
-<a href="mailto:evgeniadhima@gmail.com" class="underline">
-evgeniadhima@gmail.com
-</a>
-</p>
-<hr class="my-3" />
-<p class="text-sm">
-<strong>Ωράριο Γραφείου:</strong> Κατόπιν Ραντεβού
-</p>
-</div>
-</div>
-</section>
-
-<!-- Optional: Embedded map (if you remove Cookiebot restrictions) -->
-<!--
-<div class="my-8 w-full">
-<iframe
-src="https://www.google.com/maps/embed?..."
-width="100%"
-height="400"
-style="border:0;"
-allowfullscreen=""
-loading="lazy"
-></iframe>
-</div>
--->
 </main>
 
-<!-- FOOTER - Simplify style -->
-<footer class="bg-[#8e9b80] w-full py-8 mt-16 text-white">
-  <div class="max-w-4xl mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+<!-- FOOTER - Modified to include contact form and social icons -->
+<footer class="bg-[#8e9b80] w-full py-12 mt-16 text-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
       <!-- Contact Information -->
       <div class="text-left">
-        <h3 class="text-lg font-semibold mb-3">Επικοινωνία</h3>
-        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Παλαμηδίου 1, Αθήνα 104 41</p>
-        <p class="mb-2"><i class="fas fa-phone mr-2"></i> 2108641550</p>
-        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> info@evgeniadima-psychotherapy.gr</p>
+        <h3 class="text-xl font-serif mb-5">Ευγενία Δήμα</h3>
+        <p class="mb-4">Κλινική Ψυχολόγος – Συστημική Ψυχοθεραπεύτρια</p>
+        <p class="mb-4">Δέχεται Κατόπιν Ραντεβού</p>
+        <div class="flex items-center mb-3">
+          <div class="w-5 h-5 mr-3 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+          </div>
+          <span>Αώου 9, Αμπελόκηποι, Αθήνα, Τ.Κ. 115 23</span>
+        </div>
+        <div class="flex items-center mb-3">
+          <div class="w-5 h-5 mr-3 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+          </div>
+          <a href="tel:+302114238675">211 4238675</a>
+        </div>
+        <div class="flex items-center mb-5">
+          <div class="w-5 h-5 mr-3 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </div>
+          <a href="mailto:evgeniadima.psychotherapy@gmail.com">evgeniadima.psychotherapy@gmail.com</a>
+        </div>
+        
+        <!-- Social Media Icons -->
+        <div class="flex mt-6 space-x-4">
+          <a href="https://www.instagram.com/YourInstagramHandle/" target="_blank" rel="noopener" class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#8e9b80] transition-transform hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://goo.gl/maps/YourGoogleMapsLinkHere" target="_blank" rel="noopener" class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#8e9b80] transition-transform hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+            </svg>
+          </a>
+          <a href="mailto:evgeniadima.psychotherapy@gmail.com" class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#8e9b80] transition-transform hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </a>
+        </div>
       </div>
       
       <!-- Quick Links -->
       <div class="text-left">
-        <h3 class="text-lg font-semibold mb-3">Συνδέσεις</h3>
-        <ul>
-          <li class="mb-1"><a href="#about" class="hover:underline">Σχετικά με εμένα</a></li>
-          <li class="mb-1"><a href="#services" class="hover:underline">Υπηρεσίες</a></li>
-          <li class="mb-1"><a href="#faq" class="hover:underline">Συχνές Ερωτήσεις</a></li>
-          <li class="mb-1"><a href="#contact" class="hover:underline">Επικοινωνία</a></li>
+        <h3 class="text-xl font-serif mb-5">Συνδέσεις</h3>
+        <ul class="space-y-3">
+          <li><a href="#about" class="hover:underline">Σχετικά με εμένα</a></li>
+          <li><a href="#services" class="hover:underline">Υπηρεσίες</a></li>
+          <li><a href="#faq" class="hover:underline">Συχνές Ερωτήσεις</a></li>
+          <li><a href="#contact" class="hover:underline">Επικοινωνία</a></li>
         </ul>
+        
+        <div class="mt-8">
+          <h3 class="text-xl font-serif mb-4">Επαγγελματικά</h3>
+          <p class="mb-2">Μέλος του Συλλόγου Ελλήνων Ψυχολόγων</p>
+          <p class="mb-4">Αρ. Άδειας Ασκήσεως Επαγγέλματος: 3245</p>
+          <div class="mt-4">
+            <a href="/privacy-policy" class="text-sm hover:underline mr-4">Πολιτική Απορρήτου</a>
+            <a href="/terms" class="text-sm hover:underline">Όροι Χρήσης</a>
+          </div>
+        </div>
       </div>
       
-      <!-- Professional Info -->
+      <!-- Contact Form -->
       <div class="text-left">
-        <h3 class="text-lg font-semibold mb-3">Επαγγελματικά</h3>
-        <p class="mb-2">Μέλος του Συλλόγου Ελλήνων Ψυχολόγων</p>
-        <p class="mb-2">Αρ. Άδειας Ασκήσεως Επαγγέλματος: 3245</p>
-        <div class="mt-4">
-          <a href="/privacy-policy" class="text-sm hover:underline mr-4">Πολιτική Απορρήτου</a>
-          <a href="/terms" class="text-sm hover:underline">Όροι Χρήσης</a>
+        <h3 class="text-xl font-serif mb-5">Επικοινωνία</h3>
+        <form
+          action="https://formspree.io/f/mgvaaylr"
+          method="POST"
+          class="space-y-4"
+          id="contactForm"
+          role="form"
+          aria-labelledby="contact-title"
+        >
+          <input type="text" name="_gotcha" style="display:none" />
+          <div>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              minlength="2"
+              class="w-full bg-white/90 border-none rounded-none p-2.5 text-[#333] focus:ring-0 transition text-sm"
+              aria-required="true"
+              aria-labelledby="name-label"
+              aria-invalid="false"
+              placeholder="Όνομα*"
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              class="w-full bg-white/90 border-none rounded-none p-2.5 text-[#333] focus:ring-0 transition text-sm"
+              placeholder="Email*"
+            />
+          </div>
+          <div>
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              required
+              minlength="10"
+              class="w-full bg-white/90 border-none rounded-none p-2.5 text-[#333] focus:ring-0 transition text-sm"
+              placeholder="Μήνυμα*"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-white text-[#8e9b80] py-2.5 px-5 rounded-none hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center text-sm tracking-wide"
+          >
+            <span>Υποβολή</span>
+            <div class="loading-spinner ml-2 hidden"></div>
+          </button>
+        </form>
+
+        <!-- Success message (hidden by default) -->
+        <div id="successMessage" class="hidden bg-green-100 text-green-700 p-3 rounded-none mt-4">
+          Ευχαριστούμε για το μήνυμά σας! Θα επικοινωνήσουμε μαζί σας σύντομα.
+        </div>
+
+        <!-- Error message (hidden by default) -->
+        <div id="errorMessage" class="hidden bg-red-100 text-red-700 p-3 rounded-none mt-4">
+          Παρουσιάστηκε κάποιο πρόβλημα. Παρακαλώ δοκιμάστε να επικοινωνήσετε απευθείας στο email: info@evgeniadima-psychotherapy.gr ή καλέστε στο 211 4238675.
         </div>
       </div>
     </div>
     
     <div class="border-t border-white/20 pt-4 text-center">
-      <p class="mb-2 font-serif tracking-wide text-base">Ευγενία Δήμα – Ψυχολόγος – Ψυχοθεραπεύτρια</p>
       <p class="text-xs font-light">
-        ©2024 Όλα τα δικαιώματα κατοχυρωμένα
+        ©2024 Ευγενία Δήμα – Ψυχολόγος – Ψυχοθεραπεύτρια | Όλα τα δικαιώματα κατοχυρωμένα
       </p>
     </div>
   </div>
@@ -986,7 +971,15 @@ loading="lazy"
         if (target) {
           // Add scroll animation with offset for fixed header
           const headerHeight = document.querySelector('header').offsetHeight;
-          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+          let targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+          
+          // Special case for contact section in footer
+          if (href === '#contact') {
+            const footer = document.querySelector('footer');
+            if (footer) {
+              targetPosition = footer.offsetTop;
+            }
+          }
           
           window.scrollTo({
             top: targetPosition,
