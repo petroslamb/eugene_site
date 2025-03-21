@@ -56,7 +56,7 @@
 - [x] Add microinteractions for better engagement
 - [ ] Implement progressive web app (PWA) features - **Low Priority**
 - [x] Add schema markup for FAQ section
-- [ ] Create an emergency resources page - **High Priority**
+- [x] Create an emergency resources page - **High Priority**
 - [ ] Add a newsletter signup (if desired) - **Medium Priority**
 - [ ] Implement browser-based appointment reminders - **Low Priority**
 
