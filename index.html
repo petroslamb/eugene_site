@@ -402,8 +402,7 @@ class="inline-block bg-[#f0e5ce]/90 text-[#2c1303] py-2 px-6 rounded-none hover:
 </div>
 
 <!-- SYNTOМО BIOGRAFIKO -->
-<a id="about"></a>
-<section class="my-24 reveal-section" data-aos="fade-up" data-aos-duration="1000">
+<section id="about" class="my-24 reveal-section scroll-mt-20" data-aos="fade-up" data-aos-duration="1000">
 <h2 class="text-2xl font-serif text-center mb-12 tracking-wide">Λίγα λόγια για εμένα</h2>
 
 <div class="bg-white/80 p-8 rounded-none shadow-sm">
@@ -680,7 +679,7 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
 </main>
 
 <!-- FOOTER - Modified to include contact form and social icons -->
-<footer class="bg-[#8e9b80] w-full py-12 mt-16 text-white">
+<footer id="contact" class="bg-[#8e9b80] w-full py-12 mt-16 text-white scroll-mt-20">
   <div class="max-w-5xl mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
       <!-- Contact Information -->
@@ -852,7 +851,7 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
   });
   
   // Highlight active nav link based on scroll position
-  const sections = document.querySelectorAll('section[id], div[id="home"], div[id="about"], div[id="services"], div[id="contact"], div[id="faq"]');
+  const sections = document.querySelectorAll('section[id], div[id="home"], footer[id="contact"], div[id="services"], div[id="faq"]');
   const navLinks = document.querySelectorAll('.nav-link');
   
   // For debugging 
@@ -869,7 +868,19 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
   });
   
   function highlightNavLink() {
-    const scrollPos = window.scrollY + 100; // Add offset for fixed header
+    const scrollPos = window.scrollY + 150; // Increase offset for better detection
+    
+    // Special case for contact section - if we're near the bottom of the page
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+      // We're at the bottom of the page, highlight the contact section
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#contact') {
+          link.classList.add('active');
+        }
+      });
+      return;
+    }
     
     // Find the current section by checking which one is in the viewport
     let currentSection = '';
@@ -880,7 +891,7 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
       if (!section) return; // Skip if section is null
       
       const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
+      const sectionHeight = section.offsetHeight || 200; // Default height if not set
       const sectionId = section.getAttribute('id');
       
       if (!sectionId) return; // Skip if section has no ID
@@ -1132,6 +1143,11 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
       const href = this.getAttribute('href');
       if (href !== '#') {
         e.preventDefault();
+        
+        // Add active class to the clicked link
+        navLinks.forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+        
         const target = document.querySelector(href);
         if (target) {
           // Add scroll animation with offset for fixed header
@@ -1153,6 +1169,16 @@ class="inline-block bg-[#f0e5ce] text-[#2c1303] py-2 px-5 rounded-none hover:bg-
           
           // Update URL hash without jumping
           history.pushState(null, null, href);
+          
+          // Force highlight the correct nav link
+          setTimeout(() => {
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === href) {
+                link.classList.add('active');
+              }
+            });
+          }, 100);
         }
       }
     });
