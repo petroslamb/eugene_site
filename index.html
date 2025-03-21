@@ -8,6 +8,9 @@
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
 	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
+	<!-- Font Awesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 	<!-- Add meta tags for SEO -->
 	<meta name="description" content="Ψυχολόγος – Ψυχοθεραπεύτρια στην Αθήνα. Ατομική θεραπεία, θεραπεία ζεύγους και συμβουλευτική από την Ευγενία Δήμα." />
 	<meta name="keywords" content="ψυχολόγος, ψυχοθεραπεύτρια, Αθήνα, ψυχοθεραπεία, συμβουλευτική" />
@@ -677,13 +680,47 @@ loading="lazy"
 </main>
 
 <!-- FOOTER - Simplify style -->
-<footer class="bg-[#8e9b80] w-full py-6 mt-16 text-white">
-<div class="max-w-4xl mx-auto px-4 text-center">
-<p class="mb-2 font-serif tracking-wide text-base">Ευγενία Δήμα – Ψυχολόγος – Ψυχοθεραπεύτρια</p>
-<p class="text-xs font-light">
-©2024 Όλα τα δικαιώματα κατοχυρωμένα
-</p>
-</div>
+<footer class="bg-[#8e9b80] w-full py-8 mt-16 text-white">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+      <!-- Contact Information -->
+      <div class="text-left">
+        <h3 class="text-lg font-semibold mb-3">Επικοινωνία</h3>
+        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Παλαμηδίου 1, Αθήνα 104 41</p>
+        <p class="mb-2"><i class="fas fa-phone mr-2"></i> 2108641550</p>
+        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> info@evgeniadima-psychotherapy.gr</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="text-left">
+        <h3 class="text-lg font-semibold mb-3">Συνδέσεις</h3>
+        <ul>
+          <li class="mb-1"><a href="#about" class="hover:underline">Σχετικά με εμένα</a></li>
+          <li class="mb-1"><a href="#services" class="hover:underline">Υπηρεσίες</a></li>
+          <li class="mb-1"><a href="#faq" class="hover:underline">Συχνές Ερωτήσεις</a></li>
+          <li class="mb-1"><a href="#contact" class="hover:underline">Επικοινωνία</a></li>
+        </ul>
+      </div>
+      
+      <!-- Professional Info -->
+      <div class="text-left">
+        <h3 class="text-lg font-semibold mb-3">Επαγγελματικά</h3>
+        <p class="mb-2">Μέλος του Συλλόγου Ελλήνων Ψυχολόγων</p>
+        <p class="mb-2">Αρ. Άδειας Ασκήσεως Επαγγέλματος: 3245</p>
+        <div class="mt-4">
+          <a href="/privacy-policy" class="text-sm hover:underline mr-4">Πολιτική Απορρήτου</a>
+          <a href="/terms" class="text-sm hover:underline">Όροι Χρήσης</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="border-t border-white/20 pt-4 text-center">
+      <p class="mb-2 font-serif tracking-wide text-base">Ευγενία Δήμα – Ψυχολόγος – Ψυχοθεραπεύτρια</p>
+      <p class="text-xs font-light">
+        ©2024 Όλα τα δικαιώματα κατοχυρωμένα
+      </p>
+    </div>
+  </div>
 </footer>
 
 <!-- All JavaScript functionality in a single script to avoid redeclarations -->

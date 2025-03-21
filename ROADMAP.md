@@ -50,7 +50,7 @@
 - [x] Add cookie consent banner
 - [x] Create a 404 error page
 - [ ] Add appointment scheduling integration
-- [ ] Improve footer with additional information
+- [x] Improve footer with additional information
 - [ ] Add dark mode support
 - [ ] Create a print-friendly stylesheet
 - [x] Add microinteractions for better engagement
